@@ -9,30 +9,59 @@
     <link rel="stylesheet" href="./styles/main-styles.css">
     <title>Ono Tebe Nado</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item">главная</li>
-                <li class="menu__item">посмотреть лоты</li>
-                <li class="menu__item">об аукционе</li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link_active">главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link">посмотреть лоты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link">об аукционе</a>
+                </li>
             </ul>
         </nav>
 
         <div class="logo">
-            <img src="./images/logo.png" alt="Логотип" class="logo__img">
+            <a class="logo__link">
+                <img src="./images/logo.png" alt="Логотип" class="logo__img">
+            </a>
         </div>
 
         <div class="site-info">
-            <a href="tel:+9 999 555 5555" class="site--info__phone">+9 999 555 5555</a>
+            <div class="site-info__wrapper">
+               <a href="tel:+9 999 555 5555" class="site--info__phone">+9 999 555 5555</a>
 
-            <a href="mail:info@sobaka.ge" class="site--info__phone">info@sobaka.ge</a>
+                <a href="mailto:info@sobaka.ge" class="site--info__email">info@sobaka.ge</a>
+
+                <address class="site--info__address">наб. Принсенграхт 263- 265, Амстердам</address> 
+            </div>
+            
         </div>
     </header>
     
-    <main class="">
-        <section class="cover"></section>
-        <section class="lots"></section>
+    <main class="main">
+        <section class="cover">
+            <h1 class="main-title">
+                <span>оно</span>
+                <span>тебе</span>
+                <span>надо</span>
+            </h1>
+
+            <h2 class="main__subtitle">Аукцион вещей, вкоторые никто не верил</h2>
+
+            <button class="btn">сделать ставку</button>
+        </section>
+        
+        <section class="lots">
+            <h2 class="section-title">Лоты</h2>
+
+            
+        </section>
+        
         <section class="about"></section>
     </main>
     

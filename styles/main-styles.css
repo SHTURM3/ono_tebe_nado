@@ -1,0 +1,92 @@
+.body{
+    width: 1100px;
+    /* margin: auto; */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    padding: 95px 50px;
+}
+
+.menu {}
+.menu__list {
+    display: flex;
+    gap: 0 30px;
+}
+.menu__item {
+    list-style-type: circle;
+    line-height: 15px;
+}
+.menu__item::marker{
+    font-size: 20px;
+}
+.menu__item:first-child{
+    list-style-type: none;
+}
+.menu__link{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+.menu__link_active{
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo__link {
+
+}
+.logo__img {
+}
+
+.site-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.site-info__wrapper{
+
+}
+.site--info__phone {
+    display: block;
+}
+.site--info__email {
+    display: block;
+}
+.site--info__address {
+    display: block;
+}
+
+.main {
+}
+
+.cover {
+}
+
+.main-title {
+}
+
+.main__subtitle {
+}
+
+.btn {
+}
+
+.lots {
+}
+
+.section-title {
+}
+
+.about {
+}
+
+.footer {
+}
