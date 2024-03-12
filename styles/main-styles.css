@@ -31,8 +31,13 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
 }
 .menu__link_active{
+    text-decoration: none;
+}
+.menu__item:hover .menu__link{
     text-decoration: none;
 }
 
@@ -52,16 +57,39 @@
     align-items: end;
 }
 .site-info__wrapper{
-
+    width: 240px;
 }
-.site--info__phone {
+.site-info__phone {
     display: block;
+    font-family: Raleway, Arial, sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
 }
-.site--info__email {
+.site-info__email {
     display: block;
+    font-family: Raleway, Arial, sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
 }
-.site--info__address {
+.site-info__address {
     display: block;
+    font-family: Raleway, Arial, sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24.3px;
+    cursor: pointer;
 }
 
 .main {
