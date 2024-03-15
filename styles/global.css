@@ -100,12 +100,16 @@ textarea, select {
 
 /* default section title */
 .section-title {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* default button */
 .btn {
   font-family: Raleway, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
