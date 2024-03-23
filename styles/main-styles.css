@@ -3,8 +3,8 @@
     /* margin: auto; */
 }
 
-.main {
-}
+/* .main {
+} */
 
 /* header */
 .header {
@@ -14,14 +14,21 @@
     padding: 95px 50px;
 }
 
-.menu {}
+/* .menu {} */
 .menu__list {
     display: flex;
     gap: 0 30px;
 }
+.menu__list_column{
+    flex-direction: column;
+    align-items: center;
+}
 .menu__item {
-    list-style-type: circle;
+    list-style-type: none;
     line-height: 15px;
+}
+.menu__item_circle{
+    list-style-type: circle;   
 }
 .menu__item::marker{
     font-size: 20px;
@@ -34,6 +41,7 @@
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.5px;
+    line-height: 22px;
     text-decoration: underline;
     text-underline-offset: 4px;
     cursor: pointer;
@@ -49,10 +57,18 @@
     display: flex;
     justify-content: center;
 }
-.logo__link {
-
+/* .logo_black{} */
+.logo_black .logo__link {
+    background-color: #000;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    display: flex;
 }
-.logo__img {
+.logo_black .logo__img {
+    width: 148px;
+    height: 114px;
+    margin: auto;
 }
 
 .site-info {
@@ -131,17 +147,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    gap: 25px 25px;
 }
 .lost__item {
     width: 333px;
     min-height: 563px;
-    margin: 25px 0 0 0;
     flex-grow: 1;
 }
-.lost__item:nth-first-child(n+3){
-    margin-top: 0;
-}
-
 .lost__link {
     text-decoration: none;
 }
@@ -202,8 +214,58 @@
 
 /* about */
 .about {
+    display: grid;
+    grid-template-columns: 333px 1fr;
+    max-width: 1050px;
+    margin: auto;
+    column-gap: 25px;
+    margin: 0 0 180px 0;
+}
+.about .section-title{
+    margin: 100px 0;
+}
+/* .about__wrapper{} */
+.about__text{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+.about__text:first-child{
+    margin-bottom: 25px;
 }
 
 /* footer */
 .footer {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 90px;
+}
+.site-info_start{
+    align-items: start;
+}
+
+.social-icons {
+    display: flex;
+    justify-self: end;
+}
+.social-icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 45px;
+    transition: .2s linear;
+}
+.social-icon:hover{
+    border-radius: 0;
+}
+.social-icon:last-child{
+    margin-right: 0;
+}
+.social-icon img{
+    margin: auto;
 }
