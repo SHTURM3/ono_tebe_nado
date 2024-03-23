@@ -237,6 +237,7 @@
 
 /* footer */
 .footer {
+    position: relative;
     max-width: 1000px;
     margin: auto;
     display: grid;
@@ -268,4 +269,13 @@
 }
 .social-icon img{
     margin: auto;
+}
+
+.thanks-for-icon{
+    font-family: Raleway, Arial, sans-serif;
+    color: #000;
+    text-decoration: overline;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
