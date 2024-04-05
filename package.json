@@ -1,0 +1,21 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "Auction of lots of modern culture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check && npm run format",
+    "fixAll": "npm run lint && npm run lintfix"
+  },
+  "author": "Vizetann",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "stylelint": "^16.3.1"
+  }
+}
